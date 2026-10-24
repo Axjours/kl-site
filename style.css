@@ -108,6 +108,24 @@ img { display: block; max-width: 100%; }
   height: 100%;
   object-fit: cover;
   object-position: center 55%;
+  transition: transform 1.4s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.hero:hover .hero-img { transform: scale(1.03); }
+
+.enter {
+  display: inline-block;
+  margin-top: 34px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(245, 245, 247, 0.32);
+  color: var(--text);
+  font-size: 12px;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.hero:hover .enter {
+  color: #fff;
+  border-color: #fff;
 }
 
 .hero-veil {
@@ -345,4 +363,114 @@ figcaption {
   html { scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .shot img, .btn, .mail { transition: none; }
+}
+
+/* ---------- 游记页 ---------- */
+
+.article-cover {
+  position: relative;
+  min-height: 76vh;
+  min-height: 76svh;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+}
+
+.article-cover img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.article-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(8, 8, 10, 0.5) 0%, rgba(8, 8, 10, 0.08) 30%, rgba(8, 8, 10, 0.6) 72%, rgba(8, 8, 10, 0.97) 100%);
+}
+
+.article-cover-copy {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px 76px;
+}
+
+.article-cover-copy h1 {
+  margin: 16px 0 20px;
+  font-size: clamp(28px, 4.8vw, 54px);
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.article-body {
+  max-width: 720px;
+  padding-top: 84px;
+  padding-bottom: 110px;
+}
+
+.article-body p {
+  margin: 0 0 1.5em;
+  font-size: 18px;
+  line-height: 1.9;
+  color: rgba(245, 245, 247, 0.82);
+}
+
+.article-body .lead {
+  font-size: clamp(19px, 2.1vw, 22px);
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.article-body h2 {
+  margin: 68px 0 24px;
+  font-size: clamp(22px, 3vw, 30px);
+}
+
+.article-body figure { margin: 52px 0; }
+
+.article-body figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.article-body figcaption {
+  padding-top: 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-transform: none;
+}
+
+.note {
+  margin: 56px 0;
+  padding: 20px 22px;
+  border: 1px dashed rgba(255, 255, 255, 0.16);
+  border-radius: 12px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.back {
+  display: inline-block;
+  font-size: 12.5px;
+  color: rgba(245, 245, 247, 0.66);
+  transition: color 0.2s;
+}
+
+.back:hover { color: var(--text); }
+
+@media (max-width: 860px) {
+  .article-cover-copy { padding-bottom: 56px; }
+  .article-body { padding-top: 56px; padding-bottom: 72px; }
+  .article-body p { font-size: 17px; }
 }
