@@ -191,6 +191,27 @@ h1 {
   background: rgba(245, 245, 247, 0.08);
 }
 
+/* ---------- 顶部标题 ---------- */
+
+.masthead { padding: 168px 0 96px; }
+
+.masthead .mono { margin: 0 0 22px; }
+
+.masthead h1 {
+  margin: 0;
+  font-size: clamp(36px, 6.4vw, 76px);
+  line-height: 1.06;
+  letter-spacing: -0.035em;
+  font-weight: 600;
+}
+
+.masthead .lede {
+  margin: 26px 0 0;
+  max-width: 32em;
+  font-size: clamp(15px, 1.7vw, 18px);
+  color: var(--muted);
+}
+
 /* ---------- 通用区块 ---------- */
 
 .section {
@@ -226,6 +247,7 @@ h2 {
 .frame { margin: 0; }
 
 .shot {
+  display: block;
   overflow: hidden;
   border-radius: 18px;
   background: var(--surface);
@@ -347,6 +369,7 @@ figcaption {
   h2 { margin-bottom: 40px; }
   .grid { grid-template-columns: 1fr; gap: 36px; }
   .hero-copy { padding-bottom: 64px; }
+  .masthead { padding: 120px 0 64px; }
   .meta { margin-left: 0; flex-basis: 100%; }
   .spec > div { flex-direction: column; gap: 6px; }
   .spec dd { text-align: left; }
