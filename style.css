@@ -77,6 +77,16 @@ img { display: block; max-width: 100%; }
   letter-spacing: 0.14em;
 }
 
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.guides { gap: 20px; }
+
+.guides a.is-active { color: var(--text); }
+
 .links {
   display: flex;
   gap: 26px;
@@ -620,4 +630,12 @@ figcaption {
 
 @media (max-width: 520px) {
   .sheet { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .nav-left { gap: 16px; }
+  .guides { gap: 14px; }
+  .links { gap: 14px; }
+  .guides a,
+  .links a { font-size: 11.5px; }
 }
