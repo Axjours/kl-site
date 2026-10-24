@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>西藏篇 — RTOR</title>
+<meta name="description" content="西藏篇：从成都出发，三十多个小时。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2308080a'/><text x='32' y='43' font-family='-apple-system,sans-serif' font-size='25' font-weight='600' fill='%23f5f5f7' text-anchor='middle'>R</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html">RTOR</a>
+    <nav class="links">
+      <a class="back" href="fuguang.html">← 浮光</a>
+    </nav>
+  </div>
+</header>
+
+<section class="masthead">
+  <div class="wrap">
+    <p class="mono">浮光 · 01</p>
+    <h1>西藏篇</h1>
+    <p class="lede">从成都出发，三十多个小时。硬座、高反、和一个靠过来的脑袋。</p>
+  </div>
+</section>
+
+<div class="wrap entry-list">
+  <a class="entry reveal" href="lhasa.html">
+    <img src="images/lhasa.webp" alt="布达拉宫夜景与广场上的人" width="1200" height="800">
+    <span class="entry-copy">
+      <span class="mono">01 · 随笔</span>
+      <span class="entry-title">火车随笔A</span>
+    </span>
+  </a>
+</div>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="mono">© <span id="year">2026</span> RTOR</span>
+    <a class="mono back" href="fuguang.html">返回浮光</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>
