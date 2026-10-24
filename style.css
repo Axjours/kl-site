@@ -80,12 +80,8 @@ img { display: block; max-width: 100%; }
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 18px;
 }
-
-.guides { gap: 20px; }
-
-.guides a.is-active { color: var(--text); }
 
 .links {
   display: flex;
@@ -99,6 +95,22 @@ img { display: block; max-width: 100%; }
 }
 
 .links a:hover { color: var(--text); }
+
+/* 栏目入口：贴着 logo，但视觉上退后一层 */
+.guides {
+  gap: 18px;
+  padding-left: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.guides a {
+  font-size: 12px;
+  color: rgba(245, 245, 247, 0.46);
+}
+
+.guides a:hover { color: rgba(245, 245, 247, 0.9); }
+
+.guides a.is-active { color: rgba(245, 245, 247, 0.92); }
 
 /* ---------- 首屏 ---------- */
 
@@ -633,8 +645,8 @@ figcaption {
 }
 
 @media (max-width: 640px) {
-  .nav-left { gap: 16px; }
-  .guides { gap: 14px; }
+  .nav-left { gap: 14px; }
+  .guides { gap: 12px; padding-left: 14px; }
   .links { gap: 14px; }
   .guides a,
   .links a { font-size: 11.5px; }
