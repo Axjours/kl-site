@@ -439,10 +439,23 @@ figcaption {
 }
 
 .article-body p {
-  margin: 0 0 1.5em;
+  margin: 0 0 1.55em;
   font-size: 18px;
-  line-height: 1.9;
-  color: rgba(245, 245, 247, 0.82);
+  line-height: 2;
+  color: rgba(245, 245, 247, 0.84);
+  text-align: justify;
+  text-justify: inter-ideograph;
+  orphans: 2;
+  widows: 2;
+}
+
+.article-body p.beat { margin-top: 2.1em; }
+
+.article-body p.end {
+  margin-top: 3em;
+  font-size: 19px;
+  color: var(--text);
+  text-align: left;
 }
 
 .article-body .lead {
