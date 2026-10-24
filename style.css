@@ -559,6 +559,12 @@ figcaption {
   font-weight: 500;
 }
 
+.entry-list {
+  display: grid;
+  gap: 28px;
+  padding-bottom: 120px;
+}
+
 .empty {
   margin: 0;
   padding: 42px 0;
