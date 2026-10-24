@@ -3,79 +3,159 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>KL · 个人主页</title>
-<meta name="description" content="KL 的个人主页：介绍、作品与联系方式。">
+<title>KL — 影像</title>
+<meta name="description" content="KL 的影像记录：拉萨、湖畔、夜桥、雪山。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2308080a'/><text x='32' y='43' font-family='-apple-system,sans-serif' font-size='25' font-weight='600' fill='%23f5f5f7' text-anchor='middle'>KL</text></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap header-inner">
+<header class="nav">
+  <div class="nav-inner">
     <a class="brand" href="#top">KL</a>
-    <nav class="nav">
+    <nav class="links">
+      <a href="#frames">影像</a>
+      <a href="#gear">设备</a>
       <a href="#about">关于</a>
-      <a href="#work">作品</a>
       <a href="#contact">联系</a>
     </nav>
   </div>
 </header>
 
-<main id="top">
-
-  <section class="hero wrap">
-    <p class="eyebrow">个人主页</p>
-    <h1>把想法做成<br>能用的东西。</h1>
-    <p class="lede">这里写一句话介绍你自己：你是谁、在做什么、擅长什么。两三行以内，让人一眼知道你是干什么的。</p>
-    <div class="actions">
-      <a class="btn" href="#work">看看作品</a>
-      <a class="btn ghost" href="#contact">联系我</a>
+<section class="hero" id="top">
+  <img class="hero-img" src="images/hero.webp" alt="拉萨布达拉宫夜景" width="2000" height="1333">
+  <div class="hero-veil"></div>
+  <div class="hero-copy">
+    <p class="mono">CANON EOS R10 · 04 FRAMES · 2024—2025</p>
+    <h1>把路上的光，<br>留下来。</h1>
+    <p class="lede">四张照片，四个不同的夜与晨。设备没换过，记录方式也没变。</p>
+    <div class="cta">
+      <a class="btn" href="#frames">看照片</a>
+      <a class="btn ghost" href="#about">关于</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="about" class="wrap section">
-    <h2>关于</h2>
-    <div class="two-col">
-      <p>第一段：简单介绍你的背景。在做什么工作、做过哪些事、关注什么方向。不用写成简历，像跟人聊天那样说就行。</p>
-      <p>第二段：写点具体的。你擅长解决哪一类问题，或者最近在研究什么。具体的细节比形容词有说服力。</p>
+<section class="section" id="frames">
+  <div class="wrap">
+    <p class="mono label">// 影像</p>
+    <h2>四帧</h2>
+
+    <div class="grid">
+      <figure class="frame reveal">
+        <div class="shot">
+          <img src="images/frame-01.webp" alt="布达拉宫夜景" width="1200" height="800" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="idx mono">01</span>
+          <span class="title">拉萨 · 布达拉宫</span>
+          <span class="meta mono">2024.07.02 21:39 · 34mm f/6.3 1/80s ISO12800</span>
+        </figcaption>
+      </figure>
+
+      <figure class="frame reveal">
+        <div class="shot">
+          <img src="images/frame-02.webp" alt="湖岸与远处的人" width="659" height="439" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="idx mono">02</span>
+          <span class="title">湖畔</span>
+          <span class="meta mono">参数未记录</span>
+        </figcaption>
+      </figure>
+
+      <figure class="frame reveal">
+        <div class="shot">
+          <img src="images/frame-03.webp" alt="夜晚桥下的水面与剪影" width="1200" height="1800" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="idx mono">03</span>
+          <span class="title">桥 · 夜</span>
+          <span class="meta mono">2024.10.26 21:05 · 70mm f/2.8 1/6s ISO200</span>
+        </figcaption>
+      </figure>
+
+      <figure class="frame reveal">
+        <div class="shot">
+          <img src="images/frame-04.webp" alt="云层下的雪山" width="1400" height="933" loading="lazy">
+        </div>
+        <figcaption>
+          <span class="idx mono">04</span>
+          <span class="title">雪山</span>
+          <span class="meta mono">2025.08.20 08:47 · 56mm f/4 1/1000s ISO100</span>
+        </figcaption>
+      </figure>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="work" class="wrap section">
-    <h2>作品</h2>
-    <div class="cards">
-      <article class="card">
-        <h3>项目一</h3>
-        <p>一句话说明这个项目做了什么，解决了什么问题。</p>
-        <a href="#">查看详情 →</a>
-      </article>
-      <article class="card">
-        <h3>项目二</h3>
-        <p>可以放你做过的小工具、写过的文章、参与过的事情。</p>
-        <a href="#">查看详情 →</a>
-      </article>
-      <article class="card">
-        <h3>项目三</h3>
-        <p>没有三个就先放两个，留白比硬凑好看。</p>
-        <a href="#">查看详情 →</a>
-      </article>
-    </div>
-  </section>
+<section class="section gear" id="gear">
+  <div class="wrap">
+    <p class="mono label">// 设备</p>
+    <h2>一直在用的那一套</h2>
 
-  <section id="contact" class="wrap section">
-    <h2>联系</h2>
-    <p class="lede">有想法想聊，或者想合作，发邮件给我。</p>
+    <dl class="spec">
+      <div>
+        <dt>机身</dt>
+        <dd>Canon EOS R10</dd>
+      </div>
+      <div>
+        <dt>镜头</dt>
+        <dd>RF-S 18–45mm · EF 70–200mm f/2.8L · 56mm f/1.4</dd>
+      </div>
+      <div>
+        <dt>记录跨度</dt>
+        <dd>2024.07 — 2025.08</dd>
+      </div>
+      <div>
+        <dt>收录帧数</dt>
+        <dd>04</dd>
+      </div>
+      <div>
+        <dt>后期</dt>
+        <dd>未记录</dd>
+      </div>
+    </dl>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap narrow">
+    <p class="mono label">// 关于</p>
+    <h2>一句话</h2>
+    <p class="body">KL。拍照片，也写代码。用一台 EOS R10 记录走过的地方，偶尔把攒下来的东西整理成页面。</p>
+    <p class="body">这里放的是其中四张。</p>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <div class="wrap narrow">
+    <p class="mono label">// 联系</p>
+    <h2>想聊点什么</h2>
     <a class="mail" href="mailto:hello@example.com">hello@example.com</a>
-  </section>
+  </div>
+</section>
 
-</main>
-
-<footer class="site-footer wrap">
-  <span>© <span id="year">2026</span> KL</span>
-  <span>Hosted on GitHub Pages</span>
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <span class="mono">© <span id="year">2026</span> KL</span>
+    <span class="mono">BUILT ON GITHUB PAGES</span>
+  </div>
 </footer>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
 </script>
 
 </body>
