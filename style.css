@@ -454,6 +454,13 @@ figcaption {
   font-weight: 600;
 }
 
+.article-cover-copy .sub {
+  margin: 0;
+  font-size: clamp(15px, 1.9vw, 20px);
+  letter-spacing: 0.42em;
+  color: rgba(245, 245, 247, 0.6);
+}
+
 .article-body {
   max-width: 720px;
   padding-top: 84px;
