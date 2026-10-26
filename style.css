@@ -461,6 +461,32 @@ figcaption {
   color: rgba(245, 245, 247, 0.6);
 }
 
+/* 竖构图封面：整张照片完整呈现，标题落在下方 */
+.article-cover.portrait {
+  display: block;
+  min-height: 0;
+  padding: 104px 24px 0;
+}
+
+.article-cover.portrait::after { content: none; }
+
+.article-cover.portrait img {
+  position: static;
+  inset: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 76svh;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+
+.article-cover.portrait .article-cover-copy {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 32px 0 64px;
+}
+
 .article-body {
   max-width: 720px;
   padding-top: 84px;
